@@ -8,17 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		2487E52B2950C93200ED518E /* SplitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2487E52A2950C93200ED518E /* SplitApp.swift */; };
-		2487E52D2950C93200ED518E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2487E52C2950C93200ED518E /* ContentView.swift */; };
+		2487E52D2950C93200ED518E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2487E52C2950C93200ED518E /* MainView.swift */; };
 		2487E52F2950C93300ED518E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2487E52E2950C93300ED518E /* Assets.xcassets */; };
 		2487E5322950C93300ED518E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2487E5312950C93300ED518E /* Preview Assets.xcassets */; };
+		2487E5392950D64500ED518E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2487E5382950D64500ED518E /* LaunchScreen.storyboard */; };
+		2487E53B2950DA8100ED518E /* SplitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2487E53A2950DA8100ED518E /* SplitManager.swift */; };
+		2487E53E2951057E00ED518E /* NumberPeople.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2487E53D2951057E00ED518E /* NumberPeople.swift */; };
+		2487E540295106B000ED518E /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2487E53F295106B000ED518E /* RoundButton.swift */; };
+		2487E542295106CD00ED518E /* SquareButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2487E541295106CD00ED518E /* SquareButton.swift */; };
+		2487E5442951070200ED518E /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2487E5432951070200ED518E /* People.swift */; };
+		2487E5462951279A00ED518E /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2487E5452951279A00ED518E /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2487E5272950C93200ED518E /* Split.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Split.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2487E52A2950C93200ED518E /* SplitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitApp.swift; sourceTree = "<group>"; };
-		2487E52C2950C93200ED518E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2487E52C2950C93200ED518E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		2487E52E2950C93300ED518E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2487E5312950C93300ED518E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2487E5382950D64500ED518E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2487E53A2950DA8100ED518E /* SplitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitManager.swift; sourceTree = "<group>"; };
+		2487E53D2951057E00ED518E /* NumberPeople.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberPeople.swift; sourceTree = "<group>"; };
+		2487E53F295106B000ED518E /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		2487E541295106CD00ED518E /* SquareButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareButton.swift; sourceTree = "<group>"; };
+		2487E5432951070200ED518E /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
+		2487E5452951279A00ED518E /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +65,13 @@
 		2487E5292950C93200ED518E /* Split */ = {
 			isa = PBXGroup;
 			children = (
+				2487E548295127EC00ED518E /* ViewModel */,
+				2487E547295127D200ED518E /* View */,
+				2487E53C2950DAA300ED518E /* Components */,
 				2487E52A2950C93200ED518E /* SplitApp.swift */,
-				2487E52C2950C93200ED518E /* ContentView.swift */,
 				2487E52E2950C93300ED518E /* Assets.xcassets */,
 				2487E5302950C93300ED518E /* Preview Content */,
+				2487E5382950D64500ED518E /* LaunchScreen.storyboard */,
 			);
 			path = Split;
 			sourceTree = "<group>";
@@ -65,6 +82,34 @@
 				2487E5312950C93300ED518E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2487E53C2950DAA300ED518E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2487E53D2951057E00ED518E /* NumberPeople.swift */,
+				2487E53F295106B000ED518E /* RoundButton.swift */,
+				2487E541295106CD00ED518E /* SquareButton.swift */,
+				2487E5432951070200ED518E /* People.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		2487E547295127D200ED518E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2487E52C2950C93200ED518E /* MainView.swift */,
+				2487E5452951279A00ED518E /* HeaderView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2487E548295127EC00ED518E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2487E53A2950DA8100ED518E /* SplitManager.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +170,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2487E5392950D64500ED518E /* LaunchScreen.storyboard in Resources */,
 				2487E5322950C93300ED518E /* Preview Assets.xcassets in Resources */,
 				2487E52F2950C93300ED518E /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +183,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2487E52D2950C93200ED518E /* ContentView.swift in Sources */,
+				2487E52D2950C93200ED518E /* MainView.swift in Sources */,
+				2487E540295106B000ED518E /* RoundButton.swift in Sources */,
+				2487E542295106CD00ED518E /* SquareButton.swift in Sources */,
 				2487E52B2950C93200ED518E /* SplitApp.swift in Sources */,
+				2487E53E2951057E00ED518E /* NumberPeople.swift in Sources */,
+				2487E53B2950DA8100ED518E /* SplitManager.swift in Sources */,
+				2487E5442951070200ED518E /* People.swift in Sources */,
+				2487E5462951279A00ED518E /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,8 +325,10 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -282,9 +336,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = fraga.renato.Split;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -302,8 +359,10 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,9 +370,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = fraga.renato.Split;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
