@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Split_Launch" translatesAutoresizingMaskIntoConstraints="NO" id="N1r-JS-F37">
-                                <rect key="frame" x="50" y="-192" width="293" height="1236"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Split_Launch2" translatesAutoresizingMaskIntoConstraints="NO" id="N1r-JS-F37">
+                                <rect key="frame" x="50" y="-193" width="293" height="1238"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
@@ -36,6 +36,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Split_Launch" width="838" height="1236"/>
+        <image name="Split_Launch2" width="1256" height="1238"/>
     </resources>
 </document>
