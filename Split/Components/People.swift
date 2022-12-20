@@ -15,7 +15,7 @@ struct People: View {
                      .frame(width: 50, height: 50)
                      .background(Color(.white))
                      .cornerRadius(50)
-                     //.shadow(radius: 1.0, x: 1.0, y: 1.0)
+                     
     }
 }
 

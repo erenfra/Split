@@ -10,8 +10,7 @@ import SwiftUI
 struct MainView: View {
     @ObservedObject var splitManager = SplitManager()
     @FocusState private var amountIsFocused: Bool
-    
-   
+
     var body: some View {
         VStack {
             ZStack {
@@ -34,17 +33,17 @@ struct MainView: View {
                         .shadow(radius: 1.0, x: 1.0, y: 1.0)
                     HStack(spacing: 50) {
                         People()
-                        HStack(spacing: 15) {
-                            Button(action: {
-                                splitManager.add()
-                            }, label: {
-                                RoundButton(sfsymb: "plus")
-                            })
-                            NumberPeople(value: splitManager.numberOfPeople)
+                        HStack(spacing: 17) {
                             Button(action: {
                                 splitManager.dec()
                             }, label: {
                                 RoundButton(sfsymb: "minus")
+                            })
+                            NumberPeople(value: splitManager.numberOfPeople)
+                            Button(action: {
+                                splitManager.add()
+                            }, label: {
+                                RoundButton(sfsymb: "plus")
                             })
                         }
                         .padding(.vertical)
@@ -57,7 +56,6 @@ struct MainView: View {
                         amountIsFocused = false
                     }, label: {
                         Text("Done")
-                            
                     })
                 })
             })
@@ -73,7 +71,6 @@ struct MainView: View {
                     .foregroundColor(.black)
                     .frame(width: 200, height: 40)
                     .background(RoundedRectangle(cornerRadius: 50).foregroundColor(Color(.white)))
-                    //.shadow(radius: 1.0, x: 1.0, y: 1.0)
             }
             Spacer()
             VStack(spacing:10) {
@@ -103,8 +100,6 @@ struct MainView: View {
                     }, label: {
                         SquareButton(title: "20%", selected: splitManager.isTwentyPercentPressed)
                     })
-                    
-                    
                 }
             }
             Spacer()
@@ -117,10 +112,8 @@ struct MainView: View {
                     .foregroundColor(.black)
                     .frame(width: 200, height: 40)
                     .background(RoundedRectangle(cornerRadius: 50).foregroundColor(.white))
-                    //.shadow(radius: 1.0, x: 1.0, y: 1.0)
             }
             Spacer(minLength: 100)
-            
         }
         .background(Color("background"))
         .ignoresSafeArea(.container, edges: .top)
