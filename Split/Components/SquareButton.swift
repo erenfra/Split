@@ -12,7 +12,7 @@ struct SquareButton: View {
     var selected: Bool
     var body: some View {
         Text(title)
-             .font(.title3)
+             .font(.headline)
              .foregroundColor(.black)
              .frame(width: 50, height: 50)
              .background(Color(selected ? "selected" : "notSelected"))

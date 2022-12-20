@@ -22,6 +22,7 @@ struct HeaderView: View {
                     .padding(.vertical)
                 TextField("Amout", value: $splitManager.checkAmount, format: .currency(code: Locale.current.currencyCode ?? "USD"))
                     .font(.title2)
+                    .foregroundColor(.black)
                     .keyboardType(.decimalPad)
                     .focused($amountIsFocused)
                     .frame(width: 220, height: 20)
@@ -32,21 +33,13 @@ struct HeaderView: View {
                     People()
                     HStack(spacing: 15) {
                         Button(action: {
-                            if splitManager.numberOfPeople >= 99 {
-                                splitManager.numberOfPeople = 99
-                            }  else {
-                                splitManager.numberOfPeople += 1
-                            }
+                            splitManager.add()
                         }, label: {
                             RoundButton(sfsymb: "plus")
                         })
                         NumberPeople(value: splitManager.numberOfPeople)
                         Button(action: {
-                            if splitManager.numberOfPeople == 1 {
-                                splitManager.numberOfPeople = 1
-                            }  else {
-                                splitManager.numberOfPeople -= 1
-                            }
+                            splitManager.dec()
                         }, label: {
                             RoundButton(sfsymb: "minus")
                         })

@@ -11,6 +11,7 @@ struct People: View {
     var body: some View {
         Image(systemName: "person.3")
                      .font(.headline)
+                     .foregroundColor(.black)
                      .frame(width: 50, height: 50)
                      .background(Color(.white))
                      .cornerRadius(50)

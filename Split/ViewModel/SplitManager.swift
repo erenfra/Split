@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Combine
 
 class SplitManager: ObservableObject {
     
@@ -15,9 +16,13 @@ class SplitManager: ObservableObject {
     @Published var isTenPercentPressed = false
     @Published var isFifteenPercentPressed = false
     @Published var isTwentyPercentPressed = false
-    
+
+
     var perPerson: Double {
-           return checkAmount / Double(numberOfPeople)
+        let result = self.checkAmount / Double(self.numberOfPeople)
+        print(checkAmount)
+        print(result)
+        return result
        }
     
     var totalPerPerson: Double {
@@ -31,5 +36,51 @@ class SplitManager: ObservableObject {
                 return perPerson * 1.2
             }
         }
+    
+    func add() {
+        if numberOfPeople >= 99 {
+            return numberOfPeople = 99
+        }  else {
+            return numberOfPeople += 1
+        }
+        
+    }
+    
+    func dec() {
+        if numberOfPeople == 1 {
+            return numberOfPeople = 1
+        }  else {
+            return numberOfPeople -= 1
+        }
+        
+    }
+    
+    func zeroPressed() {
+        isZeroPercentPressed = true
+        isTenPercentPressed = false
+        isFifteenPercentPressed = false
+        isTwentyPercentPressed = false
+    }
+    
+    func tenPressed() {
+        isZeroPercentPressed = false
+        isTenPercentPressed = true
+        isFifteenPercentPressed = false
+        isTwentyPercentPressed = false
+    }
+    
+    func fiftenPressed() {
+        isZeroPercentPressed = false
+        isTenPercentPressed = false
+        isFifteenPercentPressed = true
+        isTwentyPercentPressed = false
+    }
+    
+    func twentyPressed() {
+        isZeroPercentPressed = false
+        isTenPercentPressed = false
+        isFifteenPercentPressed = false
+        isTwentyPercentPressed = true
+    }
     
 }
